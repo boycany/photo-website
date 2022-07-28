@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.morePicture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0 5rem;
+}
+.morePicture button {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 0.75rem;
+  color: #3c4043;
+  cursor: pointer;
+  font-size: 14px;
+  height: 36px;
+  line-height: 1.5rem;
+  padding: 0 16px;
+  text-align: center;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: pre;
+}
+.morePicture button:hover {
+  border-color: #dadce0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px;
+  color: #202124;
+}
+.morePicture button:focus {
+  border-color: gray;
+  outline: 2px solid transparent;
+}
+
+nav {
+  background-color: rgb(155, 107, 155);
+}
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 3rem;
+}
+nav ul li {
+  padding: 0.5rem 1rem;
+}
+nav ul li a {
+  font-size: 1.5rem;
+  color: whitesmoke;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+}
+.search input,
+.search button {
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  margin: 0 0.25rem;
+  border: 2px solid gray;
+  border-radius: 0.75rem;
+  background-color: gainsboro;
+}
+.search button {
+  border: 1px solid transparent;
+  background-color: gainsboro;
+  color: darkcyan;
+  cursor: pointer;
+  line-height: 1.5rem;
+  padding: 0.5rem 1rem;
+  transition-duration: 0.2s;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  -webkit-text-decoration: none #6b7280 solid;
+          text-decoration: none #6b7280 solid;
+}
+.search button:hover {
+  background-color: gray;
+  color: lightyellow;
+}
+.search button:focus {
+  box-shadow: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  background-color: gainsboro;
+  padding: 0.75rem 0;
+  color: darkolivegreen;
+}
+
+.pictures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.pictures .picture {
+  padding: 1rem;
+  width: 400px;
+}
+.pictures .picture .photographer {
+  font-weight: 900;
+}
+.pictures .picture .image-container {
+  overflow: hidden;
+  height: 40vh;
+}
+.pictures .picture .image-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.3s ease;
+}
+.pictures .picture .image-container img:hover {
+  transform: scale(1.25);
+}
+.pictures .picture .download {
+  font-weight: 700;
+  color: gray;
+}
+.pictures .picture .download a,
+.pictures .picture .download .copy {
+  color: blue;
+  cursor: pointer;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup .popup-inner {
+  border-radius: 20px;
+  position: relative;
+  padding: 32px;
+  width: 100%;
+  max-width: 180px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.popup .popup-inner .popup-close-btn {
+  margin-bottom: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 0.75rem;
+  color: salmon;
+  cursor: pointer;
+  font-size: 14px;
+  height: 36px;
+  line-height: 1.5rem;
+  padding: 0 16px;
+  text-align: center;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: pre;
+}
+.popup .popup-inner .popup-close-btn:hover {
+  border-color: #dadce0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px;
+  color: red;
+}
+.popup .popup-inner .popup-close-btn:focus {
+  border-color: gray;
+  outline: 2px solid transparent;
+}/*# sourceMappingURL=style.css.map */
