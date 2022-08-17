@@ -1,15 +1,25 @@
 # 圖片搜尋系統
 
-## Available Scripts
+[Demo]()
 
-In the project directory, you can run:
+## 作品說明
+
+本網站圖片來源使用 Pexels API。
+
+> https://www.pexels.com/zh-tw/
+
+## 安裝說明
+
+### `npm install`
+
+安裝此專案需要的套件
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+在開發環境中啟動此專案
+[http://localhost:3000](http://localhost:3000)
 
-### `npm run build`
+## 系統說明
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React 版本 `v18.2.0`
+- React-router-dom 版本 `6.3.0`

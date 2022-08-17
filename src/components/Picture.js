@@ -1,7 +1,6 @@
 import React from "react";
 
 function Picture({ data, setCopied }) {
-  // console.log("data :>> ", data);
   return (
     <div className="picture">
       <p className="photographer">{data.photographer}</p>

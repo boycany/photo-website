@@ -14,15 +14,18 @@ const Home = () => {
   const initialURL = "https://api.pexels.com/v1/curated?page=1&per_page=18";
   const searchURL = `https://api.pexels.com/v1/search?query=${currentSearch}&per_page=18&page=1`;
 
+  const auth =
+    process.env.REACT_APP_API_AUTH ||
+    "563492ad6f9170000100000182a311b14feb4aadaf4a08a6d9471e9d";
+
   //fetch from pexels api
   const search = async (url) => {
     setData(null);
     const dataFetch = await fetch(url, {
       method: "GET",
       headers: {
-        //Content-Type: XXX
         Accept: "application/json",
-        Authorization: process.env.REACT_APP_API_AUTH,
+        Authorization: auth,
       },
     });
 
@@ -53,20 +56,14 @@ const Home = () => {
       method: "GET",
       headers: {
         Accept: "application/json",
-        Authorization: process.env.REACT_APP_API_AUTH,
+        Authorization: auth,
       },
     });
 
     let parsedData = await dataFetch.json();
-    // console.log("parsedData :>> ", parsedData.photos);
 
     setData(data.concat(parsedData.photos));
   };
-
-  //fetch data when the page loads up
-  // useEffect(() => {
-  //   search(initialURL);
-  // }, []);
 
   useEffect(() => {
     if (currentSearch === "") {
